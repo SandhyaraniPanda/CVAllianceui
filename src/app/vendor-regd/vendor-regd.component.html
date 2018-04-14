@@ -1,0 +1,80 @@
+
+
+<form #vendorregdbasic="ngForm" (ngSubmit)="OnSubmit(vendorregdbasic)">
+<p class="h4 text-center mb-4">VENDOR REGISTRATION BASIC</p>
+
+
+  <!-- Vendor Name -->
+  <div class="form-group">
+    <label for="Vendor Name">Vendor Name:*</label>
+    <input type="text" id="Vendor Name" name="Vendor Name" #VendorName="ngModel" [ngModel]="VendorName" class="form-control"/>
+  </div>
+
+  <!-- Vendor Address -->
+  <div class="form-group">
+    <label for="Vendor Address">Vendor Address:*</label>
+    <input type="text" id="Vendor Address" name="address" #VendorAddress="ngModel" [ngModel]="VendorAddress" class="form-control"/>
+   <!-- <option  *ngFor="let address of address" [ngValue]="address">{address.Line1}
+      {address.Line2}</option> -->
+  </div>
+
+
+  <div class="form-group">
+    <input type="text" name="address" #VendorName="ngModel" [ngModel]="VendorAddress" class="form-control"/>
+  </div>
+
+  <!-- City -->
+  <div class="form-group">
+    <label for="City">City:*</label>
+    <input type="text" id="City" name="City" #City="ngModel" [ngModel]="City" class="form-control" required/>
+  </div>
+
+  <!-- Zip code -->
+  <div class="form-group">
+    <label for="Zip Code">Zip Code:*</label>
+    <input type="text" id="Zip Code" name="Zip" #ZipCode="ngModel" [ngModel]="ZipCode" class="form-control" required/>
+  </div>
+
+  <!-- Personal Details -->
+  <div class="form-group">
+    <label >Vendor Company Regd With:<br>(Personal Details)</label>
+    <textarea name="personal Details" id="personal Details" allign="" #PersonalDetails="ngModel" [ngModel]="PersonalDetails"></textarea>
+  </div>
+
+  <br>
+  <div class="form-group">
+    <label>Vendor Contact Details:*</label>
+  </div>
+
+  <div class="form-group">
+    <label for="Global EmailId">Global EmailId:*</label>
+    <input type="email" id="Global EmailId" name="emailId" #GlobalEmailId="ngModel" [ngModel]="GlobalEmailId" class="form-control" required/>
+  </div>
+
+  <div class="form-group">
+    <label for="Contact Person EmailId">Contact Person EmailId:*</label>
+    <input type="email" id="Contact Person EmailId" name="emailId" #ContactPersonEmailId="ngModel" [ngModel]="ContactPersonEmailId" class="form-control" required/>
+  </div>
+
+  <div class="form-group">
+    <label for="Landline Number">Landline Number:*</label>
+    <input type="text" id="Landline Number" name="LandlineNumber" #LandlineNumber="ngModel" [ngModel]="LandlineNumber" class="form-control" required/>
+  </div>
+
+  <div class="form-group">
+    <label for="Mobile Number1">Mobile Number1:*</label>
+    <input type="text" id="Mobile Number1" name="MobileNumber1" #MobileNumber="ngModel" [ngModel]="MobileNumber" class="form-control" required/>
+  </div>
+
+  <div class="form-group">
+    <label for="Mobile Number2">Mobile Number2:*</label>
+    <input type="text" id="Mobile Number2" name="MobileNumber2" #MobileNumber2="ngModel" [ngModel]="MobileNumber2" class="form-control" required/>
+  </div>
+
+  <div class="text-center mt-4">
+    <!--<input type="Submit" name=" " value="Next" #Next="ngModel" [(ngModel)]="Next" class="form-control" required/>-->
+    <button class="btn btn-primary" type="submit">Next</button>
+  </div>
+
+
+</form>
